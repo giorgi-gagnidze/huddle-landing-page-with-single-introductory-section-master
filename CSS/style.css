@@ -15,6 +15,7 @@ body {
   font-family: "Open Sans", "sans serif";
   color: var(--white);
   background-color: var(--violet);
+  background-image: url(../images/bg-desktop.svg);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -106,4 +107,49 @@ body {
 .fa:hover {
   color: var(--soft-magenta);
   cursor: pointer;
+}
+
+@media only screen and (max-width: 37.5rem) {
+  body {
+    background-image: url(../images/bg-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: 100% 45%;
+  }
+
+  .main-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-width: 0rem;
+  }
+
+  .main-img {
+    width: 50%;
+  }
+
+  .main-footer {
+    display: block;
+    justify-content: end;
+    margin-right: 0rem;
+  }
+
+  .article-container {
+    align-items: center;
+    text-align: center;
+    margin-bottom: 3.125rem;
+  }
+
+  .main-footer {
+    text-align: center;
+  }
+
+  .image-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .main-header {
+    display: flex;
+    align-items: center;
+  }
 }
