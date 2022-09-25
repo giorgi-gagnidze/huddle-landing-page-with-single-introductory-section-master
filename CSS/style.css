@@ -7,8 +7,103 @@
 :root {
   --violet: hsl(257, 40%, 49%);
   --soft-magenta: hsl(300, 69%, 71%);
+  --white: hsl(0, 100%, 99%);
 }
 
 body {
+  min-height: 100vh;
   font-family: "Open Sans", "sans serif";
+  color: var(--white);
+  background-color: var(--violet);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-container {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(3, 100%);
+  width: 80%;
+  min-width: 90rem;
+}
+
+.grid-item-1 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.grid-item-2 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+.grid-item-3 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+.grid-item-4 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.main-logo {
+  margin-bottom: 5rem;
+  margin-top: 3.125rem;
+}
+
+.main-img {
+  width: 100%;
+}
+
+.article-container {
+  display: flex;
+  flex-direction: column;
+  margin-left: 3.125rem;
+  width: 70%;
+}
+
+.main-heading {
+  font-size: 2rem;
+  font-weight: 600;
+  font-family: Poppins, "Sans Serif";
+  margin-bottom: 1.5625rem;
+  line-height: 3.125rem;
+  margin-top: 1.875rem;
+}
+
+.main-article {
+  margin-bottom: 1.25rem;
+  font-weight: 400;
+}
+
+.main-button {
+  height: 2.8125rem;
+  width: 10.625rem;
+  font-family: "Poppins", "Sans Serif";
+  color: var(--violet);
+  background-color: var(--white);
+  border: none;
+  border-radius: 3.125rem;
+  font-size: 0.9375rem;
+  box-shadow: 0 0.25rem 0.5rem 0 rgba(0, 0, 0, 0.2),
+    0 0.375rem 1.25rem 0 rgba(0, 0, 0, 0.19);
+}
+
+.main-footer {
+  display: flex;
+  justify-content: end;
+  margin-right: 11.25rem;
+}
+
+.main-button:hover {
+  color: var(--white);
+  background-color: var(--soft-magenta);
+  cursor: pointer;
+}
+
+.fa:hover {
+  color: var(--soft-magenta);
+  cursor: pointer;
 }

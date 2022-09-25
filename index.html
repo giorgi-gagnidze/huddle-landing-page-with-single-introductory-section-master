@@ -15,22 +15,26 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <link rel="stylesheet" href="./CSS/style.css" />
     <title>Huddle landing page with single introductory section</title>
   </head>
   <body>
     <main class="main-container">
-      <header class="main-header">
+      <header class="main-header grid-item-1">
         <img src="./images/logo.svg" alt="logo" class="main-logo" />
       </header>
-      <div class="image-container">
+      <div class="image-container grid-item-2">
         <img
           src="./images/illustration-mockups.svg"
           alt="mockups"
           class="main-img"
         />
       </div>
-      <article class="article-container">
+      <article class="article-container grid-item-3">
         <h1 class="main-heading">Build The Community Your Fans Will Love</h1>
         <p class="main-article">
           Huddle re-imagines the way we build communities. You have a voice, but
@@ -39,7 +43,20 @@
         </p>
         <button class="main-button">Register</button>
       </article>
-      <footer class="main-footer"></footer>
+      <footer class="main-footer grid-item-4">
+        <span class="fa-stack fa-lg">
+          <i class="fa fa-circle-thin fa-stack-2x"></i>
+          <i class="fa fa-facebook fa-stack-1x"></i>
+        </span>
+        <span class="fa-stack fa-lg">
+          <i class="fa fa-circle-thin fa-stack-2x"></i>
+          <i class="fa fa-twitter fa-stack-1x"></i>
+        </span>
+        <span class="fa-stack fa-lg">
+          <i class="fa fa-circle-thin fa-stack-2x"></i>
+          <i class="fa fa-instagram fa-stack-1x"></i>
+        </span>
+      </footer>
     </main>
   </body>
 </html>
